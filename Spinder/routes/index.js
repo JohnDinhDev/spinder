@@ -21,25 +21,20 @@ const constructorMethod = (app) => {
 
   app.get("/", async (req, res) => {
     if(req.session.AuthCookie) {
-      res.redirect('/home');
+      res.redirect('/users');
     } else {
-      res.redirect('/login');
+      res.redirect('/home');
     }
   });
 
   app.get("/home", async (req, res) => {
-    const curr_user = await userData.getUserById(req.session.user);
-    const topSongs = await userData.loadTopSongs();
-    const topArtists = await userData.loadTopArtists();
-    const users = await userData.getAllUsers();
+    // const curr_user = await userData.getUserById(req.session.user);
+    // const topSongs = await userData.loadTopSongs();
+    // const topArtists = await userData.loadTopArtists();
+    // const users = await userData.getAllUsers();
     res.render('home', {
-      title: 'Homepage',
-      curr_user: curr_user,
-      isLoggedIn: req.session.AuthCookie,
-      topSongs: topSongs,
-      topArtists: topArtists,
-      userCount: users.length
-      })
+      isHomePage: true
+    })
   });
 
   app.get("/register", async (req, res) => {
