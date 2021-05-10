@@ -97,12 +97,7 @@ app.get('/users', async (req, res, next) => {
 });
 
 app.get('/home', async (req, res, next) => {
-  if (!req.session.AuthCookie) {
-    res.redirect("/login");
-  } 
-  else {
     next();
-  }
 });
 
 app.get('/settings', async (req, res, next) => {
