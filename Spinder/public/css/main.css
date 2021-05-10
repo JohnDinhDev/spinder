@@ -118,13 +118,14 @@ html, body {
   filter: drop-shadow(0 0 5px white);
 }
 
+
 #home-page .graphic2 {
-  top: 60%;
+  top: 70%;
   right: 15rem;
 }
 
 #home-page .graphic3 {
-  top: 50%;
+  top: 60%;
   right: -4rem;
 }
 
