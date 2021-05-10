@@ -106,6 +106,12 @@ html, body {
 .hero-graphics-container {
   align-self: start;
   height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.hero-graphics {
+  height: 75%;
 }
 
 .hero-graphics img {
