@@ -118,7 +118,6 @@ html, body {
   filter: drop-shadow(0 0 5px white);
 }
 
-
 #home-page .graphic2 {
   top: 70%;
   right: 15rem;
@@ -132,5 +131,11 @@ html, body {
 @media screen and (max-width:1200px){
   .hero-graphics-container {
     display: none;
+  }
+}
+
+@media screen and (min-height: 1200px) {
+  #home-page .graphic1 {
+    margin-top: 8rem;
   }
 }
